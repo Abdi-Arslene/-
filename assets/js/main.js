@@ -273,7 +273,7 @@
 
     document.querySelectorAll('[data-i18n]').forEach(function(el) {
       var key = el.getAttribute('data-i18n');
-      if (t[key] !== undefined) {
+      if (t[key] !== undefined && el.innerHTML !== t[key]) {
         el.innerHTML = t[key];
       }
     });
@@ -284,7 +284,7 @@
       if (typedEl) {
         typedEl.innerHTML = '';
         typedInstance = new Typed('.typed', {
-          strings: [t.hero_typed],
+          strings: t.hero_typed,
           loop: true,
           typeSpeed: 100,
           backSpeed: 50,
@@ -294,14 +294,12 @@
     }
 
     document.documentElement.lang = lang;
-    localStorage.setItem('lang', lang);
   }
 
   var langToggle = document.getElementById('language-toggle');
   if (langToggle) {
     var savedLang = localStorage.getItem('lang') || 'en';
 
-    // checked = English (EN flag highlighted), unchecked = French (slider near FR flag)
     langToggle.checked = (savedLang === 'en');
 
     if (savedLang === 'fr') {
@@ -309,7 +307,9 @@
     }
 
     langToggle.addEventListener('change', function() {
-      applyTranslations(this.checked ? 'en' : 'fr');
+      var lang = this.checked ? 'en' : 'fr';
+      applyTranslations(lang);
+      localStorage.setItem('lang', lang);
     });
   }
 
