@@ -115,6 +115,16 @@ var translations = {
     job6_company: "Geeks Data Consulting, Tunis, Tunisia",
     job6_task1: "Retrieval and analysis of relevant data related to the company's production process (Data Collection, Machine Learning).",
 
+    nav_projects: "Projects",
+
+    projects_title: "Products",
+    projects_desc: "AI products and tools I've built — from concept to production deployment.",
+
+    privatris_name: "Privatris",
+    privatris_tagline: "PII Intelligence Platform for Banking",
+    privatris_desc: "Enterprise tool that integrates into banking environments to automatically discover, analyze, and classify Personally Identifiable Information (PII) across heterogeneous data sources — Jira tickets, databases, documents, and APIs. Combines LLMs with Microsoft Presidio for accurate PII detection and leverages Airbyte for unified data ingestion into a centralized analysis layer.",
+    privatris_sector: "Banking · Privacy · Compliance",
+
     footer_msg: "Feel free to contact me if you have any questions. I will be glad to exchange with you !"
   },
 
@@ -233,6 +243,16 @@ var translations = {
     job6_period: "Juin 2020 - Août 2020",
     job6_company: "Geeks Data Consulting, Tunis, Tunisie",
     job6_task1: "Collecte et analyse de données pertinentes liées au processus de production de l’entreprise (Collecte de Données, Machine Learning).",
+
+    nav_projects: "Projets",
+
+    projects_title: "Produits",
+    projects_desc: "Produits IA et outils que j'ai conçus et déployés en production.",
+
+    privatris_name: "Privatris",
+    privatris_tagline: "Plateforme d'Intelligence PII pour le Secteur Bancaire",
+    privatris_desc: "Outil enterprise qui s'intègre dans les environnements bancaires pour découvrir, analyser et classifier automatiquement les Données à Caractère Personnel (PII) issues de sources hétérogènes — tickets Jira, bases de données, documents et APIs. Combine des LLMs avec Microsoft Presidio pour une détection précise des PII et exploite Airbyte pour une ingestion unifiée des données vers une couche d'analyse centralisée.",
+    privatris_sector: "Banque · Confidentialité · Conformité",
 
     footer_msg: "N’hésitez pas à me contacter si vous avez des questions. Je serai ravi d’échanger avec vous !"
   }

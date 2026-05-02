@@ -67,6 +67,7 @@ document.getElementById('language-toggle').addEventListener('change', function()
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span data-i18n="nav_home">Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span data-i18n="nav_about">About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span data-i18n="nav_resume">Resume</span></a></li>
+        <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-rocket"></i> <span data-i18n="nav_projects">Projects</span></a></li>
         <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a> -->
         </li>
       </ul>
@@ -253,14 +254,14 @@ document.getElementById('language-toggle').addEventListener('change', function()
                 <li><b>AI &amp; Machine Learning</b>
                   <ul>
                     <li>Scikit-learn, TensorFlow, Keras</li>
-                    <li>NLP, Semantic Matching, Embeddings</li>
+                    <li>NLP, Semantic Matching, Embeddings, Presidio</li>
                     <li>OpenAI API, LangChain, LangGraph, MCP</li>
                     <li>MLflow, SHAP</li>
                   </ul>
                 </li>
                 <li><b>Data &amp; ML Engineering</b>
                   <ul>
-                    <li>PySpark, FastAPI</li>
+                    <li>PySpark, FastAPI, Airbyte</li>
                     <li>Data Pipelines (batch &amp; real-time)</li>
                     <li>OCR Processing</li>
                   </ul>
@@ -415,6 +416,42 @@ document.getElementById('language-toggle').addEventListener('change', function()
 
       </div>
     </section><!-- End Resume Section -->
+
+    <!-- ======= Projects Section ======= -->
+    <section id="projects" class="projects section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-i18n="projects_title">Products</h2>
+          <p data-i18n="projects_desc">AI products and tools I've built — from concept to production deployment.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="product-card">
+              <div class="product-header">
+                <div class="product-icon"><i class="bx bx-shield-quarter"></i></div>
+                <div>
+                  <h3><a href="https://www.privatris.com/" target="_blank" rel="noopener" data-i18n="privatris_name">Privatris</a></h3>
+                  <span class="product-sector" data-i18n="privatris_sector">Banking · Privacy · Compliance</span>
+                </div>
+              </div>
+              <p class="product-tagline" data-i18n="privatris_tagline">PII Intelligence Platform for Banking</p>
+              <p class="product-desc" data-i18n="privatris_desc">Enterprise tool that integrates into banking environments to automatically discover, analyze, and classify Personally Identifiable Information (PII) across heterogeneous data sources — Jira tickets, databases, documents, and APIs. Combines LLMs with Microsoft Presidio for accurate PII detection and leverages Airbyte for unified data ingestion into a centralized analysis layer.</p>
+              <div class="product-tags">
+                <span>LLMs</span>
+                <span>Microsoft Presidio</span>
+                <span>Airbyte</span>
+                <span>Python</span>
+                <span>FastAPI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Projects Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <!-- <section id="portfolio" class="portfolio section-bg">
