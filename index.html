@@ -44,7 +44,7 @@
     
       <nav class="trans">
       
-          <input type="checkbox" id="language-toggle"/>
+          <input type="checkbox" id="language-toggle" checked/>
           <label for="language-toggle">
             <svg width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione fr" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M1.9 32c0 13.1 8.4 24.2 20 28.3V3.7C10.3 7.8 1.9 18.9 1.9 32z" fill="#428bc1"></path><path d="M61.9 32c0-13.1-8.3-24.2-20-28.3v56.6c11.7-4.1 20-15.2 20-28.3" fill="#ed4c5c"></path><path d="M21.9 60.3c3.1 1.1 6.5 1.7 10 1.7s6.9-.6 10-1.7V3.7C38.8 2.6 35.5 2 31.9 2s-6.9.6-10 1.7v56.6" fill="#ffffff"></path></g></svg>
 
@@ -64,9 +64,9 @@ document.getElementById('language-toggle').addEventListener('change', function()
       </nav>
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span data-i18n="nav_home">Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span data-i18n="nav_about">About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span data-i18n="nav_resume">Resume</span></a></li>
         <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a> -->
         </li>
       </ul>
@@ -82,7 +82,7 @@ document.getElementById('language-toggle').addEventListener('change', function()
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
 
       <h1>Arslene Abdi</h1>
-      <p>I'm <span class="typed" data-typed-items="a Data Scientist"></span></p>
+      <p><span data-i18n="hero_iam">I'm</span> <span class="typed" data-typed-items="a Data Scientist"></span></p>
       <div class="social-links">
         <a href="https://www.facebook.com/profile.php?id=100010658653363" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.instagram.com/arslene.a/" target="_blank" class="instagram"><i
@@ -100,8 +100,8 @@ document.getElementById('language-toggle').addEventListener('change', function()
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About</h2>
-          <p>I'm an Engineering Master in Computer Science graduated from ESILV, Paris. I chose this path to enrich my knowledge, learn and make the right decisions for my future.
+          <h2 data-i18n="about_title">About</h2>
+          <p data-i18n="about_desc">I'm an Engineering Master in Computer Science graduated from ESILV, Paris. I chose this path to enrich my knowledge, learn and make the right decisions for my future.
           </p>
         </div>
 
@@ -110,8 +110,8 @@ document.getElementById('language-toggle').addEventListener('change', function()
             <img src="assets/img/profil-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>MEng Computer Science.</h3>
-            <p class="font-italic">
+            <h3 data-i18n="about_subtitle">MEng Computer Science.</h3>
+            <p class="font-italic" data-i18n="about_subtitle2">
               I aim to work in the AI field where I will be able to show my
               educational background.
             </p>
@@ -121,7 +121,7 @@ document.getElementById('language-toggle').addEventListener('change', function()
                   <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong>
                     <span><a href="https://github.com/Abdi-Arslene">github.com/Abdi-Arslene</a></span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span><a href="https://www.google.com/maps/place/Paris/@48.85877,2.2069522,11z/data=!3m1!4b1!4m5!3m4!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.856614!4d2.3522219">Paris, France</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about_city_label">City:</strong> <span><a href="https://www.google.com/maps/place/Paris/@48.85877,2.2069522,11z/data=!3m1!4b1!4m5!3m4!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.856614!4d2.3522219">Paris, France</a></span></li>
                 </ul>
               </div>
 
@@ -149,7 +149,7 @@ document.getElementById('language-toggle').addEventListener('change', function()
                 </ul>
               </div>
             </div>
-            <p>
+            <p data-i18n="about_paragraph">
               Thanks to my involvement in various events and professional experiences, I have developed skills such as
               organisation, rigour, listening and service. Those experiences taught me the value of hardwork and the importance of
               trying new things. I believe that there is always something more to discover and that is what I'm trying
@@ -166,8 +166,8 @@ document.getElementById('language-toggle').addEventListener('change', function()
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Passions</h2>
-          <p>These activities are what dictate my daily life. They allow me to free my mind and share my thoughts in a
+          <h2 data-i18n="facts_title">Passions</h2>
+          <p data-i18n="facts_desc">These activities are what dictate my daily life. They allow me to free my mind and share my thoughts in a
             way that I could'nt with words. Combining all of them makes a perfect balance between teamworking,
             hardworking, self-learning and surpassing myself.</p>
         </div>
@@ -177,24 +177,24 @@ document.getElementById('language-toggle').addEventListener('change', function()
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <i class="bx bx-run"></i>
-              <span>Sports</span>
-              <p>Badminton and sometimes doing weights. </p>
+              <span data-i18n="facts_sport_title">Sports</span>
+              <p data-i18n="facts_sport_desc">Badminton and sometimes doing weights. </p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bx bx-car"></i>
-              <span>Cars</span>
-              <p>Karting and going to drift events on track.</p>
+              <span data-i18n="facts_car_title">Cars</span>
+              <p data-i18n="facts_car_desc">Karting and going to drift events on track.</p>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bx bxs-plane-alt"></i>
-              <span>Travel</span>
-              <p>Discovering new landscapes and cultures around the world.</p>
+              <span data-i18n="facts_travel_title">Travel</span>
+              <p data-i18n="facts_travel_desc">Discovering new landscapes and cultures around the world.</p>
             </div>
           </div>
 
@@ -208,15 +208,15 @@ document.getElementById('language-toggle').addEventListener('change', function()
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Resume</h2>
-          <p>Through my education and my professional experiences, I try to broaden my horizons and explore all the
+          <h2 data-i18n="resume_title">Resume</h2>
+          <p data-i18n="resume_desc">Through my education and my professional experiences, I try to broaden my horizons and explore all the
             possibilities that appear on my path. Studying abroad made me discover new cultures as well as new ways of
             working and learning. </p>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
+            <h3 class="resume-title" data-i18n="resume_summary_title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Arslene Abdi</h4>
               <!--<p><em>Engineer student in Computer Science. </em></p> -->
@@ -228,31 +228,31 @@ document.getElementById('language-toggle').addEventListener('change', function()
               </ul>
             </div>
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title" data-i18n="resume_education_title">Education</h3>
             <div class="resume-item">
-              <h4>Master of Engineering</h4>
-              <h5>2020 - 2022</h5>
+              <h4 data-i18n="edu1_title">Master of Engineering</h4>
+              <h5 data-i18n="edu1_period">2020 - 2022</h5>
               <p><em><a href="https://www.esilv.fr/en/programmes/master-degree-engineering/majors/data-artificial-intelligence/">ESILV, La Défense, Paris</a></em></p>
-              <p>Computer Science program.</p>
+              <p data-i18n="edu1_desc">Computer Science program.</p>
               <ul>
-                <li>Courses: Machine Learning, Python for Data Analysis, Deep Learning and Neural Networks, Advanced Data Structure and Algorithms, NLP.</li>
-                <li>Soft Skills courses: Teamwork, Spread out your creativity, Know how to sell your ideas, Be a player of change.</li>
+                <li data-i18n="edu1_courses">Courses: Machine Learning, Python for Data Analysis, Deep Learning and Neural Networks, Advanced Data Structure and Algorithms, NLP.</li>
+                <li data-i18n="edu1_soft">Soft Skills courses: Teamwork, Spread out your creativity, Know how to sell your ideas, Be a player of change.</li>
               </ul>
 
             </div>
             <div class="resume-item">
-              <h4>Master of Engineering</h4>
-              <h5>2017 - 2020</h5>
+              <h4 data-i18n="edu2_title">Master of Engineering</h4>
+              <h5 data-i18n="edu2_period">2017 - 2020</h5>
               <p><em><a href="https://pi.tn/course/informatique-reseaux-et-multimedia/">Ecole Polytechnique Internationale privée, Tunis, Tunisia</a> </em></p>
-              <p>Computer Science program.</p>
+              <p data-i18n="edu2_desc">Computer Science program.</p>
               <ul>
-                <li>Integrated Preparatory cycle (HTML, CSS, Fundamentals of C++ Programming, Maths, Relational Databases)</li>
-                <li>IRM (C++ Programming, SQL, Data Structure and Algorithms)</li>
+                <li data-i18n="edu2_courses">Integrated Preparatory cycle (HTML, CSS, Fundamentals of C++ Programming, Maths, Relational Databases)</li>
+                <li data-i18n="edu2_irm">IRM (C++ Programming, SQL, Data Structure and Algorithms)</li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Skills</h4>
-              <h5>Hard Skills</h5>
+              <h4 data-i18n="resume_skills_title">Skills</h4>
+              <h5 data-i18n="resume_hardskills">Hard Skills</h5>
               <ul>
                 <li><b>Data Science :</b> Pandas, Plotly, Scikit-learn, TensorFlow, Keras, NLP, Shap, Streamlit, FastAPI, PySpark, Grafana, MLFlow</li>
                 <li><b>SQL :</b> MySQL, PL/SQL</li>
@@ -262,16 +262,16 @@ document.getElementById('language-toggle').addEventListener('change', function()
                 <li><b>Cloud :</b> Docker, AWS, Azure</li>
               </ul>
 
-              <h5>Soft Skills</h5>
+              <h5 data-i18n="resume_softskills">Soft Skills</h5>
               <ul>
-                <li>MBTI training</li>
-                <li>Work and Life balance</li>
-                <li>Team work</li>
+                <li data-i18n="skill_mbti">MBTI training</li>
+                <li data-i18n="skill_wlb">Work and Life balance</li>
+                <li data-i18n="skill_tw">Team work</li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>Certifications</h4>
+              <h4 data-i18n="resume_certifications_title">Certifications</h4>
               <ul>
                 
                 <li><a href="https://learn.microsoft.com/fr-fr/users/arsleneabdi-5564/credentials/c472a6ae46413e01?ref=https%3A%2F%2Fwww.linkedin.com%2F">Azure AI Fundamentals</a></li>
@@ -283,78 +283,76 @@ document.getElementById('language-toggle').addEventListener('change', function()
 
             </div>
             <div class="resume-item">
-              <h4>Languages</h4>
+              <h4 data-i18n="resume_languages_title">Languages</h4>
               <ul>
-                <li>English : Advanced</li>
-                <li>French : Native</li>
-                <li>Arabic : Beginer</li>  
+                <li data-i18n="lang_en">English : Advanced</li>
+                <li data-i18n="lang_fr">French : Native</li>
+                <li data-i18n="lang_ar">Arabic : Beginer</li>
               </ul>
             </div>
 
           </div>
           <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title" data-i18n="resume_experience_title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>Data Scientist</h4>
-              <h5>August 2022 - Present</h5>
-              <p><em>Lade GmbH, Mainz, Germany </em></p>
-              <p>The main project is to create a charging system that is able to manage all LADE's charging points and to intelligently orchestrate it using AI models, thus using more renewable energies. </p>
+              <h4 data-i18n="job1_title">Data Scientist</h4>
+              <h5 data-i18n="job1_period">August 2022 - Present</h5>
+              <p><em data-i18n="job1_company">Lade GmbH, Mainz, Germany</em></p>
+              <p data-i18n="job1_desc">The main project is to create a charging system that is able to manage all LADE's charging points and to intelligently orchestrate it using AI models, thus using more renewable energies. </p>
               <ul>
-                <li>Setting up functions that collects automatically PV data and stores them in a database. <br> <em class="tools">- AWS (Lambda, EventBridge, S3)</em></li>
-               
-                <li>Creating AI Models capable of predicting PV production for a specific location.<br> <em class="tools">- Machine Learning </em></li>
-                <li>Continously developping and maintaining models in production.</li>
+                <li data-i18n="job1_task1">Setting up functions that collects automatically PV data and stores them in a database. <br> <em class="tools">- AWS (Lambda, EventBridge, S3)</em></li>
+                <li data-i18n="job1_task2">Creating AI Models capable of predicting PV production for a specific location.<br> <em class="tools">- Machine Learning </em></li>
+                <li data-i18n="job1_task3">Continously developping and maintaining models in production.</li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Data Scientist Intern</h4>
-              <h5>February 2022 - August 2022</h5>
-              <p><em>Generali, Nantes, France </em></p>
-              <p>The main objective of this internship is to create an AI model that is capable of predicting the fraud in automobile insurance</p>
+              <h4 data-i18n="job2_title">Data Scientist Intern</h4>
+              <h5 data-i18n="job2_period">February 2022 - August 2022</h5>
+              <p><em>Generali, Nantes, France</em></p>
+              <p data-i18n="job2_desc">The main objective of this internship is to create an AI model that is capable of predicting the fraud in automobile insurance</p>
               <ul>
-                <li>Setting up a dashboard in order to visualize fraud cases. <br> <em class="tools">- Streamlit, Plotly Express, Pandas </em></li>
-               
-                <li>Creating an AI Model capable of detecting auto insurance fraud.<br> <em class="tools">- Pyspark </em></li>
+                <li data-i18n="job2_task1">Setting up a dashboard in order to visualize fraud cases. <br> <em class="tools">- Streamlit, Plotly Express, Pandas </em></li>
+                <li data-i18n="job2_task2">Creating an AI Model capable of detecting auto insurance fraud.<br> <em class="tools">- Pyspark </em></li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Project Manager</h4>
-              <h5>September 2021 - January 2022</h5>
+              <h4 data-i18n="job3_title">Project Manager</h4>
+              <h5 data-i18n="job3_period">September 2021 - January 2022</h5>
               <p><em>Nuage, Paris, France</em></p>
-              <p>The objective of the project is to create a tool in order to predict churn date and to understand the reasons that push clients to churn in that date.</p>
+              <p data-i18n="job3_desc">The objective of the project is to create a tool in order to predict churn date and to understand the reasons that push clients to churn in that date.</p>
               <ul>
-                <li>Creating Models (Machine Learning, Deep Learning, Reinforcement Learning).<br> <em class="tools">- Machine Learning (RandomForest, XGBoost), Deep Learning </em></li>
-                <li>Visual representation of the reasons pushing clients to churn (Interpretability). <br> <em class="tools">- Shap, InterpretML </em></li>
-                <li>Implementation of the tool in a website (Flask).</li>
+                <li data-i18n="job3_task1">Creating Models (Machine Learning, Deep Learning, Reinforcement Learning).<br> <em class="tools">- Machine Learning (RandomForest, XGBoost), Deep Learning </em></li>
+                <li data-i18n="job3_task2">Visual representation of the reasons pushing clients to churn (Interpretability). <br> <em class="tools">- Shap, InterpretML </em></li>
+                <li data-i18n="job3_task3">Implementation of the tool in a website (Flask).</li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Data Science academic project</h4>
-              <h5>September 2020 - April 2021</h5>
+              <h4 data-i18n="job4_title">Data Science academic project</h4>
+              <h5 data-i18n="job4_period">September 2020 - April 2021</h5>
               <p><em>Capgemini, Paris, France</em></p>
-              <p>The objective of the project is to create a tool in order to visualize the performance of your insurance.</p>
+              <p data-i18n="job4_desc">The objective of the project is to create a tool in order to visualize the performance of your insurance.</p>
               <ul>
-                <li>Data collection (Selenium, BeautifulSoup). <br> <em class="tools">- Web Scrapping(BeautifulSoup, Selenium) </em></li>
-                <li>Topic Modeling (LDA): comments subject extraction. <br> <em class="tools">- NLP (TF/IDF), Topic Modeling (Gensim) </em></li>
-                <li>Visual Representation of key words (Word Cloud). </li>
-                <li>Graphical representation of annual average scores by insurance and by year.</li>
-                <li>Implementation of the tool in a website (Flask).</li>
+                <li data-i18n="job4_task1">Data collection (Selenium, BeautifulSoup). <br> <em class="tools">- Web Scrapping(BeautifulSoup, Selenium) </em></li>
+                <li data-i18n="job4_task2">Topic Modeling (LDA): comments subject extraction. <br> <em class="tools">- NLP (TF/IDF), Topic Modeling (Gensim) </em></li>
+                <li data-i18n="job4_task3">Visual Representation of key words (Word Cloud). </li>
+                <li data-i18n="job4_task4">Graphical representation of annual average scores by insurance and by year.</li>
+                <li data-i18n="job4_task5">Implementation of the tool in a website (Flask).</li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Kaggle Hackathon</h4>
-              <h5>December 2020</h5>
+              <h4 data-i18n="job5_title">Kaggle Hackathon</h4>
+              <h5 data-i18n="job5_period">December 2020</h5>
               <p><em>ESILV, Paris, France</em></p>
               <ul>
-                <li>Creating an AI Model capable of predicting the opinion of a Spotify listener on a music according to its musical history.</li>
+                <li data-i18n="job5_task1">Creating an AI Model capable of predicting the opinion of a Spotify listener on a music according to its musical history.</li>
               </ul>
             </div>
             <div class="resume-item">
-              <h4>Data Scientist assistant Intern</h4>
-              <h5>June 2020 - August 2020</h5>
-              <p><em>Geeks Data Consulting, Tunis, Tunisia</em></p>
+              <h4 data-i18n="job6_title">Data Scientist assistant Intern</h4>
+              <h5 data-i18n="job6_period">June 2020 - August 2020</h5>
+              <p><em data-i18n="job6_company">Geeks Data Consulting, Tunis, Tunisia</em></p>
               <ul>
-                <li>Retrieval and analysis of relevant data related to the company's production process (Data Collection, Machine Learning).</li>
+                <li data-i18n="job6_task1">Retrieval and analysis of relevant data related to the company's production process (Data Collection, Machine Learning).</li>
               </ul>
             </div>
           </div>
@@ -787,7 +785,7 @@ document.getElementById('language-toggle').addEventListener('change', function()
   <footer id="footer">
     <div class="container">
       <h3>Arslene Abdi</h3>
-      <p>Feel free to contact me if you have any questions. I will be glad to exchange with you !</p>
+      <p data-i18n="footer_msg">Feel free to contact me if you have any questions. I will be glad to exchange with you !</p>
       <div class="social-links">
         <a href="https://www.facebook.com/profile.php?id=100010658653363" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.instagram.com/arslene.a/" target="_blank" class="instagram"><i
@@ -824,6 +822,8 @@ document.getElementById('language-toggle').addEventListener('change', function()
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
+  <!-- Translations -->
+  <script src="assets/js/translations.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

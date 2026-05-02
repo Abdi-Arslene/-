@@ -138,11 +138,12 @@
   /**
    * Hero type effect
    */
+  let typedInstance = null;
   const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
+    typedInstance = new Typed('.typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
@@ -260,5 +261,56 @@
       mirror: false
     })
   });
+
+  /**
+   * Language toggle (FR / EN)
+   * unchecked = English (default), checked = French
+   */
+  function applyTranslations(lang) {
+    if (typeof translations === 'undefined') return;
+    var t = translations[lang];
+    if (!t) return;
+
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) {
+        el.innerHTML = t[key];
+      }
+    });
+
+    if (typedInstance) {
+      typedInstance.destroy();
+      var typedEl = select('.typed');
+      if (typedEl) {
+        typedEl.innerHTML = '';
+        typedInstance = new Typed('.typed', {
+          strings: [t.hero_typed],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 50,
+          backDelay: 2000
+        });
+      }
+    }
+
+    document.documentElement.lang = lang;
+    localStorage.setItem('lang', lang);
+  }
+
+  var langToggle = document.getElementById('language-toggle');
+  if (langToggle) {
+    var savedLang = localStorage.getItem('lang') || 'en';
+
+    // checked = English (EN flag highlighted), unchecked = French (slider near FR flag)
+    langToggle.checked = (savedLang === 'en');
+
+    if (savedLang === 'fr') {
+      applyTranslations('fr');
+    }
+
+    langToggle.addEventListener('change', function() {
+      applyTranslations(this.checked ? 'en' : 'fr');
+    });
+  }
 
 })()
